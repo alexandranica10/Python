@@ -1,5 +1,5 @@
 print('================================\n')
-print('The Apprentice of Py-Kepp\n')
+print('          Py Wizzards \n')
 print('================================\n')
 
 energy = 100
