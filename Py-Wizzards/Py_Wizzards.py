@@ -20,13 +20,16 @@ while is_awake == False and minutes_past_seven < 60:
     print('1) Hit the toad (Snooze)')
     print('2) Get out of bed!')
 
-    choice = int(input('Choose between 1 or 2: '))
-    if choice == 1:
+    choice = input('Choose between 1 or 2: ')
+    if choice == '1':
         print('\n15 minutes pass...')
         minutes_past_seven += 15
         energy += 10
-        print(f'\nThe time is now 7:{minutes_past_seven} AM. Energy is now {energy}.')
-    elif choice == 2:
+        if minutes_past_seven == 60:
+            print(f'\nThe time is now 08:00 AM. Energy is now {energy}')
+        else:
+            print(f'\nThe time is now 7:{minutes_past_seven} AM. Energy is now {energy}.')
+    elif choice == '2':
         print('\nYou jump out of bed, ready for the day!')
         is_awake = True 
     else: 
@@ -53,12 +56,12 @@ print('1) The "Syntax Sizzler" Breakfast(Cost 15 Gold, restore 50 Energy)')
 print('2) A stale piece of Elven bread(Cost 5 Gold, restores 10 Energy)')
 print('3) Steal an apple(Cost 0 Gold). 50 procent chance to fail')
 
-choice = int(input('\nChoose bewteen 1, 2 or 3: '))
-if choice == 1:
+choice = input('\nChoose bewteen 1, 2 or 3: ')
+if choice == '1':
     coins -= 15
     energy += 50
     print(f'\nYou have {coins} gold coins left and your energy is now {energy}!')
-elif choice == 2:
+elif choice == '2':
     coins -= 5
     energy += 10
     print(f'\nYou have {coins} gold coins left and your energy is now {energy}!')
@@ -87,8 +90,8 @@ while mushrooms < 5 and total == False:
     print("\nIt's time for decisions!")   
     print('\n1) Left')
     print('2) Right\n')
-    choice = int(input('Choose 1 or 2: \n')) 
-    if choice == 1:
+    choice = input('Choose 1 or 2: \n')
+    if choice == '1':
         print('\nYaaay you found 1 mushroom.')
         mushrooms += 1
         print(f'You now have {mushrooms} mushrooms')
@@ -101,8 +104,8 @@ while mushrooms < 5 and total == False:
     print('\nEveryone is going to the right but you choose to go..')
     print('1) Left')
     print('2) Right\n')
-    choice = int(input('Choose 1 or 2: \n'))
-    if choice == 1:
+    choice = input('Choose 1 or 2: \n')
+    if choice == '1':
         print("\nOh, that's why nobody was here...")
         print(f'You now have {mushrooms} mushrooms')
         energy -= 2
@@ -117,8 +120,8 @@ while mushrooms < 5 and total == False:
     print('\nYou are lost now and choose to go to the...')
     print('1) Big Tower')
     print('2) Strange Mountain\n')
-    choice = int(input('Choose where you want to go: '))
-    if choice == 1:
+    choice = input('Choose where you want to go: ')
+    if choice == '1':
         print('\1Nothing here, you are still lost now.')
         print(f'You now have {mushrooms} mushrooms')
         energy -= 2
