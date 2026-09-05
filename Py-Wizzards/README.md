@@ -29,8 +29,13 @@ Every decision impacts your **Energy**, **Health**, and **Gold Coins**. Run out 
    git clone [https://github.com/yourusername/py-wizard-game.git](https://github.com/yourusername/py-wizard-game.git)
 ## 🗺️ Game Scenes Overview
 **The Awakening:** Deal with your enchanted toad alarm clock and search for spare change.
+
 **The "Old Brooms" Tavern:** Buy breakfast to fuel up for the day, but don't get caught stealing!
+
 **Herbology Class:** A push-your-luck foraging loop to find 5 Glowing Mushrooms.
+
 **Magical Creatures:** Choose your approach to feed Bitey the Griffin.
+
 **Madame Py's Potions:** Spend your hard-earned gold to heal up before the day ends.
+
 **Final Evaluation:** Return home and see which ending you unlocked based on your final stats.
